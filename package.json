@@ -1,0 +1,27 @@
+{
+  "name": "diff-stream2",
+  "version": "1.0.0",
+  "description": "Merges two sorted streams into a diffed tuple stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jed/diff-stream2.git"
+  },
+  "author": "Jed Schmidt <where@jed.is>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jed/diff-stream2/issues"
+  },
+  "homepage": "https://github.com/jed/diff-stream2",
+  "dependencies": {
+    "deep-equal": "^0.2.1",
+    "tuple-stream2": "^1.1.1"
+  },
+  "devDependencies": {
+    "concat-stream": "^1.4.7",
+    "through2": "^0.6.3"
+  }
+}
