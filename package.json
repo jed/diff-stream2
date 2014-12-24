@@ -1,6 +1,6 @@
 {
   "name": "diff-stream2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Merges two sorted streams into a diffed tuple stream",
   "main": "index.js",
   "scripts": {
