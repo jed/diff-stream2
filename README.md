@@ -13,24 +13,24 @@ var through = require("through2")
 var DiffStream = require("diff-stream2")
 
 // an object map of streams, but could also be an array
-var streams = {
+var stooges = {
   before: through.obj(),
   after: through.obj()
 }
 
-streams.before.write({id: 1, name: "Moe"})
-streams.before.write({id: 2, name: "Shemp"})
-streams.before.write({id: 3, name: "Larry"})
-streams.before.end()
+stooges.before.write({id: 1, name: "Moe"})
+stooges.before.write({id: 2, name: "Shemp"})
+stooges.before.write({id: 3, name: "Larry"})
+stooges.before.end()
 
-streams.after.write({id: 1, name: "Moe"})
-streams.after.write({id: 3, name: "Larry"})
-streams.after.write({id: 4, name: "Curly"})
-streams.after.end()
+stooges.after.write({id: 1, name: "Moe"})
+stooges.after.write({id: 3, name: "Larry"})
+stooges.after.write({id: 4, name: "Curly"})
+stooges.after.end()
 
 function comparator(a, b){ return !a ? 1 : !b ? -1 : a.id - b.id }
 
-var diff = DiffStream(streams, {comparator: comparator})
+var diff = DiffStream(stooges, {comparator: comparator})
 
 tuples.on("data", console.log)
 
