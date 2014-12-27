@@ -24,8 +24,8 @@ var diff = DiffStream(stooges, {comparator: comparator})
 
 var write = concat(function(diffs) {
   assert.deepEqual(diffs, [
-    {before: {id: 2, name: "Shemp"}},
-    {after: {id: 4, name: "Curly"}}
+    {after: {id: 4, name: "Curly"}},
+    {before: {id: 2, name: "Shemp"}}
   ])
 })
 

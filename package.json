@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/jed/diff-stream2",
   "dependencies": {
-    "deep-equal": "^0.2.1",
-    "tuple-stream2": "^1.1.1"
+    "deep-equal": "^0.2.1"
   },
   "devDependencies": {
     "concat-stream": "^1.4.7",

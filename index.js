@@ -7,10 +7,6 @@ module.exports = function(streams, options) {
 
   var keys = Object.keys(streams)
 
-  if (keys.length != 2) {
-    throw new Error("Expected 2 streams, received " + keys.length + ".")
-  }
-
   var evaluator = options.evaluator || deepEqual
   var tuples = tupleStream(streams, options)
   var evaluate = through.obj(onTuple)
